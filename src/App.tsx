@@ -202,8 +202,8 @@ export default function App() {
         );
       default:
         return (
-          <div className="py-20 text-center text-xs text-ink-subtle">
-            🛠️ 模块正在紧密开发部署中，请通过侧边栏选择可用控制台。
+          <div className="py-20 text-center text-caption text-ink-subtle">
+            模块正在紧密开发部署中，请通过侧边栏选择可用控制台。
           </div>
         );
     }
@@ -237,9 +237,9 @@ export default function App() {
         {/* Top Header Rail */}
         <header className="h-16 bg-surface border-b border-hairline px-6 flex items-center justify-between sticky top-0 z-10 select-none">
           <div className="flex items-center gap-2">
-            <span className="inline-block w-2.5 h-2.5 rounded-full bg-jade animate-pulse" />
-            <span className="text-3xs tracking-widest uppercase font-mono font-bold text-ink-subtle">
-              SYSTEM CONNECTED TO PROD CLUSTER // SECURE TLS
+            <span className="inline-block w-2 h-2 rounded-full bg-jade" />
+            <span className="text-xs font-semibold text-ink-muted">
+              {currentUser.community}
             </span>
           </div>
 
